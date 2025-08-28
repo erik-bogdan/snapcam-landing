@@ -1,0 +1,1 @@
+ALTER TABLE "referral_signups" ADD COLUMN "email" varchar(255) NOT NULL;
