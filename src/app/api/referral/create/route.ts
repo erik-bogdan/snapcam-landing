@@ -3,7 +3,7 @@ export const runtime = "edge"
 import { NextRequest, NextResponse } from "next/server"
 import { db } from "@/db"
 import { users } from "@/db/schema"
-import { eq, sql } from "drizzle-orm"
+import { eq } from "drizzle-orm"
 
 function randomCode(len = 8) {
   const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"

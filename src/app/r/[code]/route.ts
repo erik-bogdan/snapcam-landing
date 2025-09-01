@@ -28,8 +28,8 @@ function getIp(req: NextRequest) {
   )
 }
 
-export async function GET(req: NextRequest, { params }: { params: { code: string } }) {
-  const code = params.code
+export async function GET(req: NextRequest, { params }: { params: Promise<{ code: string }> }) {
+  const { code } = await params
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || req.nextUrl.origin
 
   // ensure vid cookie

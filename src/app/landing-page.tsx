@@ -34,7 +34,7 @@ export default function LandingPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isGeneratingRef, setIsGeneratingRef] = useState(false)
   const [referralUrl, setReferralUrl] = useState<string | null>(null)
-  const [referralCode, setReferralCode] = useState<string | null>(null)
+  const [, setReferralCode] = useState<string | null>(null)
   const [copied, setCopied] = useState(false)
 
   const form = useForm<FormData>({
@@ -123,7 +123,7 @@ export default function LandingPage() {
       setReferralCode(code)
       setReferralUrl(url)
       referralForm.reset({ firstName: data.firstName, email: data.email })
-      ;(window as any).localStorage?.setItem(`ref-created:${data.email.toLowerCase()}`, code)
+      window.localStorage?.setItem(`ref-created:${data.email.toLowerCase()}`, code)
       toast.success("Egyedi linked elkészült!")
     } catch {
       toast.error("Nem sikerült a link generálása. Próbáld újra.")

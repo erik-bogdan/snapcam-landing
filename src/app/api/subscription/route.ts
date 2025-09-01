@@ -3,7 +3,6 @@ export const runtime = "edge"
 import { NextRequest, NextResponse } from "next/server"
 import { db } from "@/db"
 import { launchSubscriptions } from "@/db/schema"
-import { eq } from "drizzle-orm"
 
 function normalizeEmailForDedup(email: string): string {
   const trimmed = email.trim().toLowerCase()
