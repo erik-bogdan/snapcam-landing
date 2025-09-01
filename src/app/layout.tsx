@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       { url: "/favicon.ico" }
     ]
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://snapcam.hu"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://snapcam.hu"),
   openGraph: {
     title: "SnapCam - Forradalmi Képmegosztás",
     description:
