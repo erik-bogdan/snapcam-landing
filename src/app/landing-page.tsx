@@ -365,11 +365,11 @@ export default function LandingPage() {
                 <p className="text-lg font-semibold">Cserébe csak egyet kérünk:</p>
                 <div className="bg-white/20 rounded-xl p-4 mx-auto max-w-2xl">
                   <p className="text-base leading-relaxed">
-                    <strong>Adjatok őszinte visszajelzést</strong> az alkalmazás minőségéről és használhatóságáról, és javasoljátok,
-                    <strong> min változtatnátok</strong> illetve <strong>mit egészítenétek ki még benne</strong>.
+                    <strong>A visszajelzésed aranyat ér! </strong> Modd el, miben tudnánk fejlődni, mivel tudnánk még
+                    <strong> nagyobb értéket adni </strong> felhasználóinknak! 
                   </p>
                 </div>
-                <p className="text-sm opacity-90">A visszajelzésetek segít nekünk a legjobb terméket létrehozni!</p>
+                <p className="text-sm opacity-90">Visszajelzésed segít nekünk a legjobb terméket létrehozni!</p>
               </div>
             </div>
           </motion.div>
